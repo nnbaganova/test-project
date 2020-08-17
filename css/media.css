@@ -1,0 +1,179 @@
+/* Media Queries */
+
+/* 992 - 1200 px */
+@media screen and (max-width: 1200px) {
+	.cards_info {
+		height: 310px;
+		padding: 30px 24px;
+	}
+	.cards_first::before, .cards_third::before, .cards_sixth::before {
+		border: 10px solid transparent;
+	}
+
+	.cards_first::before {
+		top: 50px; left: -20px; 
+		border-right: 10px solid white; 
+	}
+
+	.cards_third::before {
+		top: 50px; right: -20px;
+		border-left: 10px solid white;
+	}
+
+	.cards_sixth::before {
+		top: -20px; left: 50px;
+		border-bottom: 10px solid white;
+	}
+	.cards__name {
+		font-size: 10px;
+	}
+	.cards__title {
+		font-size: 14px;
+		margin: 30px 0 0;
+	}
+	.cards__text {
+		font-size: 13px;
+	}
+	.cards__number {
+		font-size: 13px;
+		margin-top: 25px;
+	}
+	/*travel*/
+	.tour {
+		margin-bottom: 30px;
+	}
+	/*clients*/
+}
+
+/* 768 - 992 px */
+@media screen and (max-width: 992px) {
+	/*our-journal*/
+	h1 {
+		font-size: 26px;
+	}
+	.box-subs__title{
+		font-size: 32px;
+	}
+	.review__quote {
+		font-size: 82px;
+	}
+	.our-journal {
+		padding-top: 86px;
+	}
+	.journal-title {
+		margin-bottom: 58px;
+	}
+	.cards {
+		width: 50%;
+	}
+	.cards_info {
+		height: 345px;
+	}
+	.cards:nth-child(3) {
+		order: 6;
+	}
+	.cards_first::before, .cards_third::before, .cards_sixth::before {
+		border: 10px solid transparent; 
+	}
+	.cards_first::before, .cards_sixth::before {
+	top: 50px; left: -20px; 
+	border-right: 10px solid white; 
+	}
+	.cards_third::before {
+	top: 50px; right: -20px;  
+	border-left: 10px solid white; 
+	}
+}
+
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+	/*our-journal*/
+	h1 {
+		font-size: 24px;
+	}
+	h4 {
+		font-size: 14px;
+	}	
+	.box-subs__title{
+		font-size: 30px;
+	}
+	.review__quote {
+		font-size: 76px;
+	}
+	.review__text{
+		font-size: 14px;
+		line-height: 28px;
+		margin-top: -50px;
+	}
+	.box-subs__text {
+		font-size: 14px;
+		padding-bottom: 28px;
+	}
+	.our-journal {
+		padding-top: 66px;
+	}
+	.journal-title {
+		margin-bottom: 48px;
+	}
+	.journal-blocks {
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		box-shadow: none;
+	}
+	.cards {
+		min-width: 70%;
+		max-width: 100%;
+	}
+	.cards:nth-child(5) {
+		order: 3;
+	}
+	.cards_first::before, .cards_third::before, .cards_sixth::before {
+		border: 10px solid transparent; 
+		top: -20px; left: 50px; right: auto; 
+		border-bottom: 10px solid white; 
+	}
+	.cards_info {
+		padding: 30px 10px;
+	}
+	/*footer*/
+	.footer {
+		height: auto;
+	}
+	.details {
+		flex-direction: column-reverse;
+	}
+	.tel {
+		margin: 20px 0 25px;
+	}
+}
+
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+	/*our-journal*/
+	h1 {
+		font-size: 22px;
+	}
+	.our-journal {
+		padding-top: 46px;
+	}
+	.journal-title {
+		margin-bottom: 28px;
+	}
+	/*clients*/
+	.review__quote {
+		font-size: 70px;
+	}
+	.box-subs {
+		left: 0;
+		margin-left:0;
+		max-width: 576px;
+		width: 100%;
+	}
+	.rights {
+		font-size: 14px;
+	}
+	.tel {
+		font-size: 22px;
+	}
+}
